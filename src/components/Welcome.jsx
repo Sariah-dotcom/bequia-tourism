@@ -1,4 +1,5 @@
 import React from 'react'
+import BentoGrid from './BentoGrid.jsx'
 
 export default function Welcome() {
   return (
@@ -12,6 +13,7 @@ export default function Welcome() {
             aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
         </p>
       </div>
+      <BentoGrid />
     </div>
   )
 }

@@ -28,14 +28,25 @@ p {
 nav {
   position: fixed;
   width: 100vw;
-  z-index: 1;
+  z-index: 10;
+  padding: 1.5rem;
+  
+}
+
+.scroll{
+  background-color: #003C43;
+  background-color: #003C43;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 2px 2px 10px #0000007a;
+  transition: background-color 0.5s ease, border-radius 0.5s ease, box-shadow 0.3s ease;
 }
 
 .nav-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem;
+  transition: background-color 0.5s ease, border-radius 0.5s ease, box-shadow 0.3s ease;
 }
 
 .logo {
@@ -87,4 +98,61 @@ nav {
 /* Welcome */
 .welcome {
   text-align: right;
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 equal-width columns */
+  grid-template-rows: repeat(5, auto); /* Auto height rows */
+  grid-column-gap: 0.5rem;
+  grid-row-gap: 0.5rem;
+  width: 100%;
+  height: 50vh;
+  margin-top: 3rem;
+}
+
+.div1 { 
+  grid-area: 1 / 1 / 2 / 6; /* Span across all 5 columns */
+  background-color: #003C43; 
+  border-radius: 1rem; 
+}
+
+.div2 { 
+  grid-area: 2 / 1 / 4 / 3; /* Span across 2 columns */
+  background-color: #003C43; 
+  border-radius: 1rem; 
+}
+
+.div3 { 
+  grid-area: 4 / 1 / 5 / 3; /* Span across 2 columns */
+  background-color: #003C43; 
+  border-radius: 1rem; 
+}
+
+.div4 { 
+  grid-area: 2 / 3 / 5 / 6; /* Span across 3 columns */
+  background-color: #003C43; 
+  border-radius: 1rem; 
+}
+
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  color: #FFF;
+  background-color: #003C43;
+  padding: 4rem 2rem 1rem;
+}
+
+.footer-links {
+  display: flex ;
+  gap: 5rem;
+  justify-content: flex-end;
+}
+
+.footer-links div{
+  display: flex;
+  flex-direction: column;
 }
