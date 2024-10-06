@@ -10,7 +10,7 @@ export default function Hero() {
       </video>
 
       <div className="hero-content">
-        <h1>The Big <br /> Little <br /> Island</h1>
+        <h1>The Big <br /> Little <br /> Island.</h1>
       </div>
     </div>
   )

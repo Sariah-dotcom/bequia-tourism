@@ -7,18 +7,23 @@ export default function Footer() {
   return (
     <div className='footer'>
       <footer>
-        <img src="/images/logo.png" alt="" />
+
+        <div className="footer-top">
+          <img src="/images/logo.png" alt="" />
+          <h2>Bequia Tourism Authority</h2>
+        </div>
+
         <div className="footer-links">
             <div>
-                <Link to='/'>Home</Link>
-                <Link to='/'>About Bequia</Link>
-                <Link to='/'>Travel</Link>
+              <Link to='/' className='footer-link'>Home</Link>
+              <Link to='/' className='footer-link'>About Bequia</Link>
+              <Link to='/' className='footer-link'>Travel</Link>
             </div>
 
             <div>
-                <Link to='/'>Accomodation</Link>
-                <Link to='/'>Activities</Link>
-                <Link to='/'>Links</Link>
+                <Link to='/' className='footer-link'>Accommodation</Link>
+                <Link to='/' className='footer-link'>Activities</Link>
+                <Link to='/' className='footer-link'>Links</Link>
             </div>
         </div>
         <p style={{fontSize:'0.5rem'}}>Bequia Tourism Authority © {year}</p>
