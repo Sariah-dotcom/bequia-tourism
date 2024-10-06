@@ -3,11 +3,11 @@ import React from 'react'
 export default function BentoGrid() {
   return (
  
-      <div className="parent">
-            <div className="div1">1</div>
-            <div className="div2">2</div>
-            <div className="div3">3</div>
-            <div className="div4">4</div>
-      </div>
+    <div className="parent">
+      <img src="/images/island.jpg" alt="" className='img1' />
+      <img src="/images/port-elizabeth.jpg" alt="" className="img-2" />
+      <img src="/images/moonhole.jpg" alt="" className="img-3" />
+      <img src="/images/bay.jpg" alt="" className="img-4" />
+    </div>
   )
 }

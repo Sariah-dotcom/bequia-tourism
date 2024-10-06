@@ -1,11 +1,12 @@
 import React from 'react'
 import BentoGrid from './BentoGrid.jsx'
+import SectionTitle from './SectionTitle.jsx'
 
 export default function Welcome() {
   return (
     <div id='page-section'>
       <div className="welcome">
-        <h2>Welcome to Bequia</h2>
+        <SectionTitle title="Welcome" />
         <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sagittis
             eleifend lobortis. Nulla augue nisi, gravida et tincidunt a, commodo id metus.

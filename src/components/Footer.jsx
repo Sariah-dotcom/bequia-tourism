@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 
 export default function Footer() {
+  const year = new Date().getFullYear();
   return (
     <div className='footer'>
       <footer>
@@ -20,7 +21,7 @@ export default function Footer() {
                 <Link to='/'>Links</Link>
             </div>
         </div>
-        <p style={{fontSize:'0.5rem'}}>Bequia Toursim Authority 2024</p>
+        <p style={{fontSize:'0.5rem'}}>Bequia Tourism Authority © {year}</p>
       </footer>
     </div>
   )
