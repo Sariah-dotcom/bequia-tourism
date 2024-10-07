@@ -37,7 +37,6 @@ nav {
   width: 100vw;
   z-index: 10;
   padding: 1.5rem;
-  
 }
 
 .scroll{
@@ -59,6 +58,35 @@ nav {
 .logo {
   height: 4rem;
   width: 4rem;
+}
+
+.menu-items {
+  background-color: #003C43;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  padding: 1rem 3rem;
+  height: 100%;
+  width: 100%;
+  top:0;
+  right: -100%;
+  transition: right 0.5s ease;
+  gap: 3rem;
+}
+
+.menu-items.show {
+  right: -1rem;
+}
+
+.close-icon {
+  color: #FFF;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 2.3rem;
+}
+
+.desktop-menu {
+  display: none;
 }
 
 /* Hero */
@@ -86,7 +114,7 @@ nav {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.4); /* Black transparent overlay */
+  background-color: rgba(0, 0, 0, 0.5); /* Black transparent overlay */
   z-index: 0;
 }
 
@@ -154,22 +182,35 @@ nav {
 .travel-grid {
   display: grid;
   overflow-x: hidden;
-  grid-template-columns: repeat(3,1fr);
-  height: 30vh;
+  grid-template-columns: repeat(1,1fr);
+  /* height: 30vh; */
   padding: 1rem 0rem;
+  gap: 3rem;
 }
 
 .grid-item {
   display: flex;
   align-items: center;
-  text-align: center;
+  justify-content: center;
   background-color: #003C43;
   color: #FFF;
-  font-size: 0.8rem;
+  gap: 3rem;
+  font-size: 1rem;
   border-radius: 1rem;
   padding: 1rem;
-  width: 6rem;
+  height: 10rem;
+  width: 100%;
   box-shadow: 2px 2px 10px #0000007a;
+}
+
+.grid-item:hover {
+  color: #77B0AA;
+}
+
+.card-icons {
+  color: #FFF;
+  height: 3rem;
+  width: 3rem;
 }
 
 /* Activities */
@@ -219,7 +260,6 @@ footer {
 
 .footer-top h2 {
   font-size: 1.1rem;
-  font-weight: 600;
 }
 
 .footer-links {
@@ -234,13 +274,58 @@ footer {
   gap: 0.3rem;
 }
 
-.footer-link {
+.footer-link, .header-link {
   color: #FFF;
   text-decoration: none;
   font-family: 'Inter', sans-serif;
   font-size: 0.8rem;
 }
 
-.footer-link:hover {
+.footer-link:hover, .header-link:hover {
   color: #77B0AA;
+}
+
+@media only screen and (min-width: 700px) {
+ 
+  nav {
+    padding: 1.5rem 3rem;
+  }
+
+  .logo {
+    height: 5rem;
+    width: 5rem;
+  }
+  
+  #hamburger-menu {
+    display: none;
+  }
+
+  .desktop-menu {
+    display: flex;
+    gap: 3rem;
+    padding-right: 2rem;
+  }
+
+  .header-link {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  .hero-content {
+    margin-left: 3rem;
+  }
+
+  .hero-content h1{
+    font-size: 5rem;
+  }
+
+  .travel-grid {
+    grid-template-columns: repeat(3,1fr);
+  }
+
+  #page-section {
+    padding: 0rem 10rem;
+    margin-bottom: 15rem;
+  }
+
 }

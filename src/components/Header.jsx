@@ -1,6 +1,7 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { IoMenu } from 'react-icons/io5';
+import { IoMdClose } from "react-icons/io";
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
@@ -27,6 +28,11 @@ export default function Header() {
     };
   }, []);
 
+  const [getMenuVisible, setMenuVisible] = useState(false);
+  function showMenu(){
+    setMenuVisible(!getMenuVisible);
+  }
+
   return (
     <div>
       <nav>
@@ -34,8 +40,29 @@ export default function Header() {
           <Link to='/'>
               <img src="/images/logo.png" alt="site logo" className='logo' />
           </Link>
-          <IoMenu style={{ color:'FFFFFF', fontSize:'2rem'}} />
+          
+          <div className="desktop-menu">
+            <Link to='/' className='header-link'>Home</Link>
+            <Link to='/'  className='header-link'>About Bequia</Link>
+            <Link to='/'  className='header-link'>Accommodation</Link>
+            <Link to='/'  className='header-link'>Travel</Link>
+            <Link to='/'  className='header-link'>Contact</Link>
+          </div>
+          <IoMenu style={{ color:'FFFFFF', fontSize:'2rem'}} onClick={showMenu}  id='hamburger-menu' />
         </div>
+
+        <div className={`menu-items ${getMenuVisible ? 'show' : ''}`}>
+          <div className="close-icon">
+            <IoMdClose  style={{ height:'2rem', width: '2rem' }} onClick={showMenu}/>
+          </div>
+          <Link to='/' className='header-link'>Home</Link>
+          <Link to='/'  className='header-link'>About Bequia</Link>
+          <Link to='/'  className='header-link'>Accommodation</Link>
+          <Link to='/'  className='header-link'>Travel</Link>
+          <Link to='/'  className='header-link'>Contact</Link>
+        </div>
+
+        
         
       </nav>
     </div>

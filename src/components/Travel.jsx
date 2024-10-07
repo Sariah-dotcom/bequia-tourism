@@ -1,5 +1,7 @@
 import React from 'react'
-import SectionTitle from './SectionTitle'
+import SectionTitle from './SectionTitle';
+import { MdHotel, MdOutlineTravelExplore } from "react-icons/md";
+import { IoMdBoat } from "react-icons/io";
 
 export default function Travel() {
   return (
@@ -8,15 +10,18 @@ export default function Travel() {
       <div className="travel-grid">
 
         <div className='grid-item'>
-            <p>Getting to and around Bequia</p>
+          <MdOutlineTravelExplore className='card-icons' />
+          <p>Travel to & <br />around Bequia</p>
         </div>
 
         <div className='grid-item'>
-            <p>Ferry Schedule</p>
+          <IoMdBoat className='card-icons' />
+          <p>Ferry Schedule</p>
         </div>
 
         <div className='grid-item'>
-            <p>Where to Stay</p>
+          <MdHotel className='card-icons' />
+          <p>Where to Stay</p>
         </div>
       </div>
     </div>
