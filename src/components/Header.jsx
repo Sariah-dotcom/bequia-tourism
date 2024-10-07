@@ -40,10 +40,10 @@ export default function Header() {
           <Link to='/'>
               <img src="/images/logo.png" alt="site logo" className='logo' />
           </Link>
-          
+
           <div className="desktop-menu">
             <Link to='/' className='header-link'>Home</Link>
-            <Link to='/'  className='header-link'>About Bequia</Link>
+            <Link to='/about-bequia'  className='header-link'>About Bequia</Link>
             <Link to='/'  className='header-link'>Accommodation</Link>
             <Link to='/'  className='header-link'>Travel</Link>
             <Link to='/'  className='header-link'>Contact</Link>
@@ -56,7 +56,7 @@ export default function Header() {
             <IoMdClose  style={{ height:'2rem', width: '2rem' }} onClick={showMenu}/>
           </div>
           <Link to='/' className='header-link'>Home</Link>
-          <Link to='/'  className='header-link'>About Bequia</Link>
+          <Link to='/about-bequia'  className='header-link' onClick={showMenu}>About Bequia</Link>
           <Link to='/'  className='header-link'>Accommodation</Link>
           <Link to='/'  className='header-link'>Travel</Link>
           <Link to='/'  className='header-link'>Contact</Link>
