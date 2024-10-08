@@ -5,14 +5,21 @@ import Header from './components/Header';
 import Home from './pages/Home';
 import Footer from './components/Footer';
 import About from './pages/About';
+import Accommodation from './pages/Accommodation';
+import Travel from './pages/Travel';
+import ScrollToTop from './components/ScrollToTop';
 
 export default function App() {
   return (
     <Router>
       <Header />
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about-bequia" element={<About />} />
+        <Route path="/accommodations" element={<Accommodation />} />
+        <Route path="/travel" element={<Travel />} />
+
       </Routes>
       <Footer />
     </Router>

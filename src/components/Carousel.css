@@ -1,0 +1,95 @@
+.carousel-container {
+  position: relative;
+  width: 100%;
+  min-height: 50vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.carousel-wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.carousel-cards {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  /* This width needs to be dynamic based on the number of cards */
+  width: calc(100% * 5); /* For example, if you have 5 cards */
+}
+
+.card {
+  flex: 0 0 100%; /* Occupy full width on mobile */
+  height: 50vh;
+  padding: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-color: #f5f5f5;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.card p {
+  font-size: 1rem;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  padding: 1rem;
+  cursor: pointer;
+  z-index: 2;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-button.prev {
+  left: 10px;
+}
+
+.carousel-button.next {
+  right: 10px;
+}
+
+.carousel-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Tablet view - Show 2 cards */
+@media screen and (min-width: 769px) {
+  .card {
+    flex: 0 0 50%;
+  }
+
+  .carousel-cards {
+    width: calc(100% * 5 / 2); /* Adjust based on how many cards are visible */
+  }
+}
+
+/* Desktop view - Show 3 cards */
+@media screen and (min-width: 1025px) {
+  .card {
+    flex: 0 0 33.33%;
+  }
+
+  .carousel-cards {
+    width: calc(100% * 5 / 3); /* Adjust for 3 cards */
+  }
+}
