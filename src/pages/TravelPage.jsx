@@ -3,12 +3,12 @@ import PageHero from '../components/PageHero.jsx';
 import SectionTitle from '../components/SectionTitle.jsx';
 import EmailContact from '../components/EmailContact.jsx';
 
-export default function Travel() {
+export default function TravelPage() {
   return (
     <div>
       <PageHero imgSrc='/images/ferry.jpg' pageTitle='Travel' />
       
-      <div id="page-section">
+      <div className="page-section">
         <SectionTitle title='Getting to Bequia' />
         <h3>Direct Flights to Argyle International</h3>
         <p>
@@ -30,7 +30,7 @@ export default function Travel() {
         </p>
       </div>
 
-      <div id="page-section">
+      <div className="page-section" id='ferry-info'>
         <h3>Ferry</h3>
         <p>
             After arriving at the airport in St. Vincent, visitors should take a taxi (approx US$30) to the "Ferry Dock" 
@@ -45,7 +45,7 @@ export default function Travel() {
         </p>
       </div>
 
-      <div id="page-section">
+      <div className="page-section">
         <h3>Flying to Bequia</h3>
         <p>
             Visitors from outside the Caribbean region, including from the USA and Canada, may still also approach 
@@ -54,7 +54,7 @@ export default function Travel() {
         </p>
       </div>
 
-      <div id="page-section">
+      <div className="page-section">
         <SectionTitle title='Getting around Bequia' />
         <h3>Taxi</h3>
         <h3>Minibuses</h3>

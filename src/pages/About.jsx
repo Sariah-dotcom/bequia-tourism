@@ -9,7 +9,7 @@ export default function About() {
     <div>
       <PageHero imgSrc="/images/bay.jpg" pageTitle='About Bequia'/>
 
-      <div id="page-section">
+      <div className="page-section">
         <SectionTitle title='An Island Story'/>
         
         <p>
@@ -24,7 +24,7 @@ export default function About() {
         </p>
       </div>
 
-      <div id='page-section'>
+      <div className='page-section'>
         <SectionTitle title='Facts' />
         <div className="accordian-container">
 

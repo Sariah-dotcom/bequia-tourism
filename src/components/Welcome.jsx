@@ -4,7 +4,7 @@ import SectionTitle from './SectionTitle.jsx'
 
 export default function Welcome() {
   return (
-    <div id='page-section'>
+    <div className='page-section'>
       <div className="welcome">
         <SectionTitle title="Welcome" />
         <p>

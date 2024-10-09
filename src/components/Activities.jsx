@@ -4,7 +4,7 @@ import CarouselCard from './CarouselCard'
 
 export default function Activities() {
   return (
-    <div id='page-section'>
+    <div className='page-section'>
         <SectionTitle title='Activities' />
 
         <div className="carousel">
