@@ -7,13 +7,12 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
-export default function SwiperComponent({ children }) { // Accept children props
+export default function SwiperComponent({ children, slidesPerView = 1 }) { // Accept children props
   return (
     <Swiper
-      // install Swiper modules
       modules={[Navigation, Pagination]} 
       spaceBetween={10}                  
-      slidesPerView={1}                  
+      slidesPerView={slidesPerView}                  
       navigation                         
       pagination={{ clickable: true }}
       className='swiper-wrapper'

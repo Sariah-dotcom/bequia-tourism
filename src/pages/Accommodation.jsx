@@ -4,24 +4,26 @@ import AccommodationCard from '../components/AccommodationCard.jsx'
 import SectionTitle from '../components/SectionTitle.jsx'
 import PageHero from '../components/PageHero.jsx'
 import SwiperComponent from '../components/SwiperComponent.jsx'
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { SwiperSlide } from 'swiper/react';
+import '../carouselStyles.css';
+
+
 export default function Accommodation() {
   return (
     <div>
-
       <PageHero imgSrc="/images/villa.jpg" pageTitle='Accommodation'/>
-    <div className="page-section">
-        <p>
-            Bequia offers a wide variety of accommodation to suit all tastes and budgets. 
-            Luxury villas, luxury beachside hotels, small family-run inns and guest houses, 
-            self-catering apartments - the big little island has them all and in every location.
-        </p>
-    </div>
-     
+    
+        <div className="page-section">
+            <p>
+                Bequia offers a wide variety of accommodation to suit all tastes and budgets. 
+                Luxury villas, luxury beachside hotels, small family-run inns and guest houses, 
+                self-catering apartments - the big little island has them all and in every location.
+            </p>
+        </div>
 
-      <div className="page-section">
-        <SectionTitle title='Apartments' />
-        <SwiperComponent>
+        <div className="page-section">
+            <SectionTitle title='Apartments' />
+            <SwiperComponent slidesPerView={1}>
            
             <SwiperSlide>
                 <AccommodationCard 
@@ -86,9 +88,9 @@ export default function Accommodation() {
                     accommodationTitle='The Penthouse Suite' 
                     accommodationDescription=' The Penthouse Suite is the ultimate accommodation & is part of Tropical Hideaways eco friendly & luxurious private Villas, Suites and Studios.' />
             </SwiperSlide>
-            
-      </SwiperComponent>
-      </div>
+    
+            </SwiperComponent>
+        </div>
 
       <div className="page-section">
         <SectionTitle title='Guesthouses' />
