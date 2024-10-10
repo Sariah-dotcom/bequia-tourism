@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function AccommodationCard(props) {
   return (
@@ -9,7 +10,9 @@ export default function AccommodationCard(props) {
         <h3>{props.accommodationTitle}</h3>
         <p className='location'>{props.location}</p>
         <p>{props.accommodationDescription}</p>
-        <button className='learn-btn'>Learn More</button>
+        <Link to='/accommodation-info'>
+          <button className='learn-btn'>Learn More</button>
+        </Link>
       </div>
     </div>
     </div>
