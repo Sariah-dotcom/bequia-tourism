@@ -343,6 +343,26 @@ ul li a:hover {
   color: #77B0AA;
 }
 
+.accommodation-info-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-bottom: 1px solid #77B0AA;
+  padding: 2rem 0rem;
+}
+
+.acc-contact {
+  font-style: italic;
+  color: #062349;
+  font-weight: 700;
+}
+
+.location {
+  font-style: italic;
+  color: #77B0AA;
+  margin-bottom: 1rem;
+}
+
 @media only screen and (min-width: 700px) {
  
   nav {

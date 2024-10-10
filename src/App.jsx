@@ -8,6 +8,7 @@ import About from './pages/About';
 import Accommodation from './pages/Accommodation';
 import ScrollToTop from './components/ScrollToTop';
 import TravelPage from './pages/TravelPage';
+import AccommodationsInfo from './pages/AccommodationsInfo';
 
 export default function App() {
   return (
@@ -19,6 +20,7 @@ export default function App() {
         <Route path="/about-bequia" element={<About />} />
         <Route path="/accommodations" element={<Accommodation />} />
         <Route path="/travel" element={<TravelPage />} />
+        <Route path="/accommodation-info" element={<AccommodationsInfo />} />
 
       </Routes>
       <Footer />
