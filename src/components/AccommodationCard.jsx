@@ -11,9 +11,12 @@ export default function AccommodationCard(props) {
         <h3>{props.accommodationTitle}</h3>
         <p className='location'>{props.location}</p>
         <p>{props.accommodationDescription}</p>
-        <HashLink to={`/accommodation-info/#${props.section}`}>
-          <button className='learn-btn'>Learn More</button>
-        </HashLink>
+        <button 
+            className="learn-btn" 
+            onClick={() => props.onLearnMore(props.section)} // Call the handler passed down from parent
+          >
+            Learn More
+          </button>
       </div>
     </div>
     </div>

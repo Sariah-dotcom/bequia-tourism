@@ -6,10 +6,8 @@ import EmailContact from '../components/EmailContact'
 export default function AccommodationsInfo() {
   return (
     <div>
-      <PageHero imgSrc="/images/villa.jpg" pageTitle='Accommodation Details' />
       <div className="page-section">
         
-        <h2>Apartments</h2>
         <div id="apartments">
            
             <div id="aqua">

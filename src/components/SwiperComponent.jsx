@@ -16,6 +16,23 @@ export default function SwiperComponent({ children, slidesPerView = 1 }) { // Ac
       navigation                         
       pagination={{ clickable: true }}
       className='swiper-wrapper'
+      breakpoints={{
+        // Breakpoint at 640px (mobile)
+        640: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        // Breakpoint at 768px (tablet)
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 10,
+        },
+        // Breakpoint at 1024px (desktop)
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 10,
+        },
+      }}
     >
       {children}
     </Swiper>

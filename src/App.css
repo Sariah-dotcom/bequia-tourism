@@ -339,6 +339,28 @@ ul li a:hover {
   padding: 2rem 0rem;
 }
 
+.accommodation-info-card div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.accommodation-info-card div h3 {
+  font-size: 2rem;
+}
+
+@media only screen and (min-width:1024px) {
+  .accommodation-info-card {
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .accommodation-info-card img {
+    width: 50%;
+  }
+
+}
+
 .acc-contact {
   font-style: italic;
   color: #062349;
