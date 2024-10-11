@@ -1,18 +1,20 @@
 import React from 'react'
-import SectionTitle from '../components/SectionTitle'
 import AccommodationInfoCard from '../components/AccommodationInfoCard'
 import PageHero from '../components/PageHero'
+import EmailContact from '../components/EmailContact'
 
 export default function AccommodationsInfo() {
   return (
     <div>
-        <PageHero imgSrc="/images/villa.jpg" pageTitle='Accommodation Details' />
+      <PageHero imgSrc="/images/villa.jpg" pageTitle='Accommodation Details' />
       <div className="page-section">
-        <SectionTitle title='All Accomodations' /> 
+        
         <h2>Apartments</h2>
         <div id="apartments">
+           
             <div id="aqua">
                 <AccommodationInfoCard
+                    infoImg='/images/accommodations/apartments/aqua-on-bequia (1).jpg'
                     accInfoTitle='AQUA on Bequia'
                     description1='Beautifully appointed one bedroom apartments in a colorful tropical garden setting, perched on the Belmont hillside overlooking Admiralty Bay. Walk to the harbor, Princess Margaret Beach and Lower Bay.'
                     description2='Complimentary guest access to The GYM at AQUA on Bequia, too!'
@@ -23,6 +25,7 @@ export default function AccommodationsInfo() {
 
             <div id="white-cactus">
                 <AccommodationInfoCard
+                    infoImg='/images/accommodations/apartments/bequia-white-cactus.jpg'
                     accInfoTitle='Bequia White Cactus'
                     description1='Newly renovated duplex with an ocean view. Walking distance from Adams Bay and The Liming; short drive to Friendship and Lower Bay.'
                     description2='The duplex has two separate-entrance apartments: a three-bedroom upper floor and a two-bedroom ground floor (with a mini-gym). Each bedroom features air-conditioning and king/queen-sized beds.'
@@ -34,6 +37,7 @@ export default function AccommodationsInfo() {
 
             <div id="lookout">
                 <AccommodationInfoCard
+                    infoImg='/images/accommodations/apartments/the-lookout.jpg'
                     accInfoTitle='Lookout Apartments'
                     location='Lower Bay'
                     description1='Two newly refurbished, 2-bedroom, 2 ensuite bath boutique apartments with stunning panoramic views over Lower Bay. Each with fully equipped kitchen, aircon, Wifi and fabulous sun deck.'
@@ -47,6 +51,7 @@ export default function AccommodationsInfo() {
 
             <div id="pinkhouse">
                 <AccommodationInfoCard
+                    infoImg='/images/accommodations/apartments/pink-house.jpg'
                     accInfoTitle='Pinkhouse Apartments'
                     description1='Charming house, reasonably priced and conveniently situated within walking distance of the harbour and Princess Margaret beach. Consisting of two separate apartments (top and ground) the house can be rented as a single unit or as 2 separate apartments. '
                     description2='Each apartment is fully equipped with wifi, cable TV, use of a local cell phone, kitchen, use of washing machine, ceiling fans, mosquito nets over the beds. In addition a weekly maid service is provided.'
@@ -58,6 +63,7 @@ export default function AccommodationsInfo() {
 
             <div id="seashells">
                 <AccommodationInfoCard
+                    infoImg='/images/accommodations/apartments/sea-shells.jpg'
                     accInfoTitle='Sea Shells Holiday Apartments'
                     description1='Over looking the picturesque Port Elizabeth with a stroll to beaches and restaurants.One- and two-bedroom self-catering apartments designed for Caribbean outdoor living, offering house keeping, telephone and televisions. '
                     description2='You are welcome to make this your holiday home while you enjoy the hidden secrets of St. Vincent and the Grenadines. Enjoy your vacation, Arlene & Michael.'
@@ -68,6 +74,7 @@ export default function AccommodationsInfo() {
 
             <div id="sugarapple">
                 <AccommodationInfoCard
+                    infoImg='/images/accommodations/apartments/appleinn.gif'
                     accInfoTitle='Sugarapple Inn'
                     location='Friendship Bay'
                     description1='Eight spacious, breezy and stylish studio apartments with full kitchen, and a view which captures the tranquillity of the surroundings with the Atlantic to the east, and rolling hills to the west. Interconnecting apartments are also available for families and groups.'
@@ -79,6 +86,7 @@ export default function AccommodationsInfo() {
 
             <div id="pool-house">
                 <AccommodationInfoCard
+                    infoImg='/images/accommodations/apartments/pool-house.jpg'
                     accInfoTitle='The Pool House'
                     location='Admiralty Bay'
                     description1=' The Pool House is a 2 bedroom unit which is part of Tropical Hideaways eco friendly and luxurious private Villas, Suites and Studios. Set in 4 acres of mature tropical gardens our amazing views will literally take your breath away.'
@@ -90,6 +98,7 @@ export default function AccommodationsInfo() {
 
             <div id="penthouse-suite">
                 <AccommodationInfoCard
+                    infoImg='/images/accommodations/apartments/penthouse-suite.jpg'
                     accInfoTitle='The Penthouse Suite'
                     location='Admiralty Bay'
                     description1=' The Penthouse Suite is the ultimate accommodation & is part of Tropical Hideaways eco friendly & luxurious private Villas, Suites and Studios. Set in 4 acres of mature tropical gardens our amazing views will literally take your breath away.'
@@ -179,6 +188,7 @@ export default function AccommodationsInfo() {
         </div>
 
       </div>
+      <EmailContact />
     </div>
   )
 }

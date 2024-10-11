@@ -1,8 +1,10 @@
 import React from 'react'
+import { TbPointerPause } from 'react-icons/tb'
 
 export default function AccommodationInfoCard(props) {
   return (
     <div className='accommodation-info-card'>
+      <img src={props.infoImg} alt="img" />
       <h3>{props.accInfoTitle}</h3>
         <p className='location'>{props.location}</p>
         <p>{props.description1}</p>

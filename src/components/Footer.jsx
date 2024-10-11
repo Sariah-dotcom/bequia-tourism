@@ -18,12 +18,9 @@ export default function Footer() {
               <Link to='/' className='footer-link'>Home</Link>
               <Link to='/about-bequia' className='footer-link'>About Bequia</Link>
               <Link to='/travel' className='footer-link'>Travel</Link>
-            </div>
-
-            <div>
-                <Link to='/accommodations' className='footer-link'>Accommodation</Link>
-                <Link to='/' className='footer-link'>Activities</Link>
-                <Link to='/' className='footer-link'>Links</Link>
+              <Link to='/accommodations' className='footer-link'>Accommodation</Link>
+              <Link to='/' className='footer-link'>Activities</Link>
+              <Link to='/' className='footer-link'>Links</Link>
             </div>
         </div>
         <p style={{fontSize:'0.5rem'}}>Bequia Tourism Authority © {year}</p>

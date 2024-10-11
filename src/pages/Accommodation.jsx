@@ -6,6 +6,8 @@ import PageHero from '../components/PageHero.jsx'
 import SwiperComponent from '../components/SwiperComponent.jsx'
 import { SwiperSlide } from 'swiper/react';
 import '../carouselStyles.css';
+import { HashLink } from 'react-router-hash-link';
+
 
 
 export default function Accommodation() {
@@ -14,11 +16,11 @@ export default function Accommodation() {
       <PageHero imgSrc="/images/villa.jpg" pageTitle='Accommodation'/>
     
         <div className="page-section">
-            <p>
-                Bequia offers a wide variety of accommodation to suit all tastes and budgets. 
-                Luxury villas, luxury beachside hotels, small family-run inns and guest houses, 
-                self-catering apartments - the big little island has them all and in every location.
-            </p>
+          <p>
+            Bequia offers a wide variety of accommodation to suit all tastes and budgets. 
+            Luxury villas, luxury beachside hotels, small family-run inns and guest houses, 
+            self-catering apartments - the big little island has them all and in every location.
+          </p>
         </div>
 
         <div className="page-section">
@@ -28,14 +30,17 @@ export default function Accommodation() {
             <SwiperSlide>
                 <AccommodationCard 
                     location='Spring'
+                    section='aqua'
                     accommodationImg ='/images/accommodations/apartments/aqua-on-bequia.jpg' 
                     accommodationTitle='AQUA on Bequia' 
                     accommodationDescription='Beautifully appointed one bedroom apartments in a colorful tropical garden setting, perched on the Belmont hillside overlooking Admiralty Bay.' />
+                    
             </SwiperSlide>
 
             <SwiperSlide>
                 <AccommodationCard 
                     location='Spring'
+                    section='white-cactus'
                     accommodationImg ='/images/accommodations/apartments/bequia-white-cactus.jpg' 
                     accommodationTitle='Bequia White Cactus' 
                     accommodationDescription=' Newly renovated duplex with an ocean view. Walking distance from Adams Bay and The Liming; short drive to Friendship and Lower Bay.' />
@@ -44,6 +49,7 @@ export default function Accommodation() {
             <SwiperSlide>
                 <AccommodationCard 
                     location='Lower Bay'
+                    section='lookout'
                     accommodationImg ='/images/accommodations/apartments/the-lookout.jpg' 
                     accommodationTitle='Lookout Apartments' 
                     accommodationDescription='Two newly refurbished, 2-bedroom, 2 ensuite bath boutique apartments with stunning panoramic views over Lower Bay.' />
@@ -52,6 +58,7 @@ export default function Accommodation() {
             <SwiperSlide>
                 <AccommodationCard 
                     location='Belmont'
+                    section='pinkhouse'
                     accommodationImg ='/images/accommodations/apartments/pink-house.jpg' 
                     accommodationTitle='Pink House Apartment' 
                     accommodationDescription='Charming house, reasonably priced and conveniently situated within walking distance of the harbour and Princess Margaret beach.' />
@@ -60,6 +67,7 @@ export default function Accommodation() {
             <SwiperSlide>
                 <AccommodationCard 
                     location='Spring'
+                    section='seashells'
                     accommodationImg ='/images/accommodations/apartments/sea-shells.jpg' 
                     accommodationTitle='Sea Shells Holiday Apartments' 
                     accommodationDescription='One and two-bedroom self-catering apartments designed for Caribbean outdoor living, offering house keeping, telephone and televisions.' />
@@ -68,6 +76,7 @@ export default function Accommodation() {
             <SwiperSlide>
                 <AccommodationCard 
                     location='Friendship Bay'
+                    section='sugarapple'
                     accommodationImg ='/images/accommodations/apartments/appleinn.gif' 
                     accommodationTitle='Sugarapple Inn' 
                     accommodationDescription='Eight spacious, breezy and stylish studio apartments with full kitchen, and a view which captures the tranquillity of the surroundings with the Atlantic to the east.' />
@@ -76,6 +85,7 @@ export default function Accommodation() {
             <SwiperSlide>
                 <AccommodationCard 
                     location='Admiralty Bay'
+                    section='pool-house'
                     accommodationImg ='/images/accommodations/apartments/pool-house.jpg' 
                     accommodationTitle='The Pool House' 
                     accommodationDescription=' The Pool House is a 2 bedroom unit which is part of Tropical Hideaways eco friendly and luxurious private Villas, Suites and Studios.' />
@@ -84,6 +94,7 @@ export default function Accommodation() {
             <SwiperSlide>
                 <AccommodationCard 
                     location='Admiralty Bay'
+                    section='penthouse-suite'
                     accommodationImg ='/images/accommodations/apartments/penthouse-suite.jpg' 
                     accommodationTitle='The Penthouse Suite' 
                     accommodationDescription=' The Penthouse Suite is the ultimate accommodation & is part of Tropical Hideaways eco friendly & luxurious private Villas, Suites and Studios.' />
@@ -94,6 +105,7 @@ export default function Accommodation() {
 
       <div className="page-section">
         <SectionTitle title='Villas' />
+        
         <SwiperComponent slidesPerView={1} >
           <SwiperSlide>
             <AccommodationCard 
@@ -103,7 +115,6 @@ export default function Accommodation() {
               accommodationDescription='A brand new modern Caribbean villa built and furnished to the highest standards. Completed Feb 2010. Located on picturesque Spring Bay.Two large en-suite bedrooms, situated either side of a spacious open plan living area and bespoke handmade kitchen.' />
           </SwiperSlide>
         
-
         <SwiperSlide>
             <AccommodationCard 
               location='Spring Bay'

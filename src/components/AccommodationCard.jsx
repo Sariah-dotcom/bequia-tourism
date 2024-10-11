@@ -1,5 +1,6 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { HashLink } from 'react-router-hash-link';
+
 
 export default function AccommodationCard(props) {
   return (
@@ -10,9 +11,9 @@ export default function AccommodationCard(props) {
         <h3>{props.accommodationTitle}</h3>
         <p className='location'>{props.location}</p>
         <p>{props.accommodationDescription}</p>
-        <Link to='/accommodation-info'>
+        <HashLink to={`/accommodation-info/#${props.section}`}>
           <button className='learn-btn'>Learn More</button>
-        </Link>
+        </HashLink>
       </div>
     </div>
     </div>
