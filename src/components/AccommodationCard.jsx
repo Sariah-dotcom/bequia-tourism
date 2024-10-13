@@ -16,7 +16,7 @@ export default function AccommodationCard(props) {
             onClick={() => props.onLearnMore(props.section)} // Call the handler passed down from parent
           >
             Learn More
-          </button>
+        </button>
       </div>
     </div>
     </div>

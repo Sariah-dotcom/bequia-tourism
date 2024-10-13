@@ -9,8 +9,13 @@ export default function Footer() {
       <footer>
 
         <div className="footer-top">
+        <div className='email-contact'>
           <img src="/images/logo.png" alt="" />
-          <h2>Bequia Tourism Authority</h2>
+
+          <h2>Want to know more? <br /> Contact us at</h2>
+          <a href="mailto:">info@bequiatourism.com</a>
+        </div>
+          
         </div>
 
         <div className="footer-links">
@@ -23,7 +28,12 @@ export default function Footer() {
               <Link to='/' className='footer-link'>Links</Link>
             </div>
         </div>
-        <p style={{fontSize:'0.5rem'}}>Bequia Tourism Authority © {year}</p>
+
+        <div className='copyright'>
+          <hr />
+          <p style={{fontSize:'0.5rem', marginTop: '0.8rem'}}>Bequia Tourism Association © {year}</p>
+        </div>
+        
       </footer>
     </div>
   )

@@ -65,7 +65,7 @@ export default function About() {
             />
         </div>
       </div>
-      <EmailContact />
+      {/* <EmailContact /> */}
 
 
      

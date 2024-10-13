@@ -186,7 +186,7 @@ export default function AccommodationsInfo() {
         </div>
 
       </div>
-      <EmailContact />
+      {/* <EmailContact /> */}
     </div>
   )
 }

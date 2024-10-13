@@ -279,6 +279,7 @@ export default function Accommodation() {
           </SwiperSlide>
 
         </SwiperComponent>
+        
       </div>
 
       <div className="page-section">
@@ -340,7 +341,7 @@ export default function Accommodation() {
         </SwiperComponent>
       </div>
 
-      <EmailContact />
+      {/* <EmailContact /> */}
     </div>
   );
 }

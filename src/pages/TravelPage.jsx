@@ -60,7 +60,7 @@ export default function TravelPage() {
         <h3>Minibuses</h3>
         <h3>On Foot</h3>
       </div>
-      <EmailContact />
+      {/* <EmailContact /> */}
     
     
     </div>
