@@ -11,14 +11,14 @@ export default function AccommodationInfoCard(props) {
         <p>{props.description2}</p>
         <p>{props.description3}</p>
 
-        <p className="acc-contact">
+        <p className="contact">
           Book here:{" "}
           <a href={props.siteLink} target="_blank" rel="noopener noreferrer">
             {" "}
             {props.siteLink}
           </a>
         </p>
-        <p className="acc-contact">Tel: {props.telNumber}</p>
+        <p className="contact">Tel: {props.telNumber}</p>
       </div>
     </div>
   );

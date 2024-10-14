@@ -21,7 +21,6 @@ export default function SwiperComponent({ children, slidesPerView = 1 }) { // Ac
         640: {
           slidesPerView: 1,
           spaceBetween: 20,
-          navigation: false
         },
         // Breakpoint at 768px (tablet)
         768: {

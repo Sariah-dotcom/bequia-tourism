@@ -13,6 +13,7 @@ export default function Activities() {
       <SwiperComponent slidesPerView={2.5}>
         <SwiperSlide>
           <CarouselCard
+            sectionLink="#site-1"
             activitiesImg="/images/activities/bagatelle.jpg"
             activitiesTitle='Places to Visit'
             activitiesDescription="Check out the many sites and sounds Bequia has to offer"
@@ -37,6 +38,7 @@ export default function Activities() {
 
         <SwiperSlide>
           <CarouselCard
+            sectionLink="#tours-and-hiking"
             activitiesImg="/images/activities/bagatelle.jpg"
             activitiesTitle='Tours & Hiking'
             activitiesDescription="There is far more to Bequia than just its beaches and its quaint waterfront bars and shops."

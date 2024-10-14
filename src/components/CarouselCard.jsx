@@ -1,5 +1,7 @@
 import React from 'react';
 import '../carouselStyles.css';
+import { HashLink } from 'react-router-hash-link';
+
 
 export default function CarouselCard(props) {
   return (
@@ -8,12 +10,12 @@ export default function CarouselCard(props) {
       <div className='carousel-text'>
         <h3>{props.activitiesTitle}</h3>
         <p>{props.activitiesDescription}</p>
-        <button 
-            className="learn-btn" 
-            onClick={() => props.onLearnMore(props.section)} // Call the handler passed down from parent
-          >
+        <HashLink to={`/activities/${props.sectionLink}`}>
+          <button className="learn-btn">
             Learn More
-        </button>
+          </button>
+        </HashLink>
+       
       </div>
       
     </div>

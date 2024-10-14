@@ -45,6 +45,7 @@ export default function Header() {
             <Link to='/' className='header-link'>Home</Link>
             <Link to='/about-bequia'  className='header-link'>About Bequia</Link>
             <Link to='/accommodations'  className='header-link'>Accommodation</Link>
+            <Link to='/activities'  className='header-link'>Activities</Link>
             <Link to='/'  className='header-link'>Travel</Link>
             <Link to='/'  className='header-link'>Contact</Link>
           </div>
@@ -58,6 +59,7 @@ export default function Header() {
           <Link to='/' className='header-link' onClick={showMenu}>Home</Link>
           <Link to='/about-bequia'  className='header-link' onClick={showMenu}>About Bequia</Link>
           <Link to='/accommodations'  className='header-link' onClick={showMenu} >Accommodation</Link>
+          <Link to='/activities'  className='header-link'  onClick={showMenu}>Activities</Link>
           <Link to='/travel'  className='header-link' onClick={showMenu}>Travel</Link>
           <Link to='/contact'  className='header-link' onClick={showMenu}>Contact</Link>
         </div>

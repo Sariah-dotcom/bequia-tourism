@@ -9,6 +9,7 @@ import Accommodation from './pages/Accommodation';
 import ScrollToTop from './components/ScrollToTop';
 import TravelPage from './pages/TravelPage';
 import AccommodationsInfo from './pages/AccommodationsInfo';
+import ActivitiesPage from './pages/ActivitiesPage';
 
 export default function App() {
   return (
@@ -21,6 +22,7 @@ export default function App() {
         <Route path="/accommodations" element={<Accommodation />} />
         <Route path="/travel" element={<TravelPage />} />
         <Route path="/accommodation-info" element={<AccommodationsInfo />} />
+        <Route path="/activities" element={<ActivitiesPage />} />
 
       </Routes>
       <Footer />
