@@ -12,15 +12,32 @@
     gap: 1rem;
 }
 
-
-
 .activity-section {
     gap: 4rem;
+}
+
+#events, #restaurants, #diving, #sites, #section-jump {
+    padding-top: 10rem;
 }
 
 .activities img {
     border-radius: 1rem;
     box-shadow: 2px 2px 5px #0000005a;
+}
+
+#top-btn {
+    position: fixed;
+    right: 0.2rem;
+    bottom: 0.5rem;
+    color: #0B346A;
+    height: 2rem;
+    width: 2rem;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+#top-btn.visible {
+    opacity: 1;
 }
 
 /* Jump to Section */

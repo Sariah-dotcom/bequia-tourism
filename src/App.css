@@ -3,9 +3,13 @@
   box-sizing: border-box;
 }
 
-/* body {
-  background-color: #f0ebe7;
-} */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #FFF;
+}
 
 h1, h2, h3 {
   font-family: 'Plus Jakarta Sans', sans-serif;

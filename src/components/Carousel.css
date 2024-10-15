@@ -15,11 +15,12 @@
   overflow: hidden;
 }
 
-.carousel-cards {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-  /* This width needs to be dynamic based on the number of cards */
-  width: calc(100% * 5); /* For example, if you have 5 cards */
+.carousel-card {
+  position: relative;
+  width: 7rem;
+  height: 10rem;
+  border: 1px solid red;
+
 }
 
 .card {
