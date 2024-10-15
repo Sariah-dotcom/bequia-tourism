@@ -9,6 +9,7 @@ export default function TravelPage() {
       
       <div className="page-section">
         <SectionTitle title='Getting to Bequia' />
+       
         <h3>Direct Flights to Argyle International</h3>
         <p>
             The following international airlines now fly direct into Argyle International Airport (AIA) in St. Vincent: <br /> <br />

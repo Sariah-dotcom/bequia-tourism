@@ -16,10 +16,6 @@ export default function About() {
             anywhere else in the Caribbean. With fewer than six thousand inhabitants, it 
             feels like home from the moment you arrive; friendliness is the watchword, 
             and the pace is relaxed and easy-going. 
-            <br /><br />
-            Choose a holiday of total beach relaxation or exhilarating sailing and diving in some of the most beautiful waters in the world. Get to know the island on foot, or hire a car and discover so much more than just the golden beaches; take day or overnight trips to neighbouring isles or simply fill up another perfect day doing what is increasingly necessary to unwind - nothing! 
-
-            <br /><br />Your choice of holiday home could be a luxury hilltop villa, air-conditioned self-catering apartment or first class small hotel, a friendly beachfront guesthouse or a privately chartered yacht swaying quietly at anchor off a deserted beach. 
         </p>
       </div>
 
@@ -48,7 +44,7 @@ export default function About() {
                     US$1 to EC$2.67. Most businesses and taxis will accept US$ (normally at EC$2.60), and you may find
                     small denomination US$ notes useful. US$ rather than sterling travellers cheques are recommended. 
                     Credit cards are widely accepted at hotels, restaurants and boutiques, but smaller businesses may 
-                    ask for EC$ or US$ cash. ATM machines are available at both banks on the island.'
+                    ask for EC or US cash. ATM machines are available at both banks on the island.'
            />
 
            <Accordian 

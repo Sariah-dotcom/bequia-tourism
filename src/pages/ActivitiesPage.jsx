@@ -38,7 +38,7 @@ export default function ActivitiesPage() {
       <PageHero imgSrc="/images/activities/activities-hero.jpg" pageTitle="Activities"/>
       
       <div className="page-section">
-        <p>There is far more to Bequia than just its beaches,
+        <p className='opening-paragraph'>There is far more to Bequia than just its beaches,
           its quaint waterfront bars and shops, and its sleepy yet bustling little main town and harbour. 
         </p>
 

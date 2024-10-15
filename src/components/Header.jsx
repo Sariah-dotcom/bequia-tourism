@@ -46,8 +46,7 @@ export default function Header() {
             <Link to='/about-bequia'  className='header-link'>About Bequia</Link>
             <Link to='/accommodations'  className='header-link'>Accommodation</Link>
             <Link to='/activities'  className='header-link'>Activities</Link>
-            <Link to='/'  className='header-link'>Travel</Link>
-            <Link to='/'  className='header-link'>Contact</Link>
+            <Link to='/travel'  className='header-link'>Travel</Link>
           </div>
           <IoMenu style={{ color:'FFFFFF', fontSize:'2rem'}} onClick={showMenu}  id='hamburger-menu' />
         </div>
@@ -61,7 +60,6 @@ export default function Header() {
           <Link to='/accommodations'  className='header-link' onClick={showMenu} >Accommodation</Link>
           <Link to='/activities'  className='header-link'  onClick={showMenu}>Activities</Link>
           <Link to='/travel'  className='header-link' onClick={showMenu}>Travel</Link>
-          <Link to='/contact'  className='header-link' onClick={showMenu}>Contact</Link>
         </div>
 
         

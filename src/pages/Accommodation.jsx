@@ -17,10 +17,10 @@ export default function Accommodation() {
 
   return (
     <div>
-      <PageHero imgSrc="/images/villa.jpg" pageTitle="Accommodation" />
+      <PageHero imgSrc="/images/villa.jpg" pageTitle="Accommodations" />
 
       <div className="page-section">
-        <p>
+        <p className="opening-paragraph">
           Bequia offers a wide variety of accommodation to suit all tastes and
           budgets. Luxury villas, luxury beachside hotels, small family-run inns
           and guest houses, self-catering apartments - the big little island has

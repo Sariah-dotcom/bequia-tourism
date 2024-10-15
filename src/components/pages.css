@@ -1,10 +1,59 @@
+.page-section {
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    padding: 1.5rem;
+    margin-bottom: 3rem ;
+}
 
 .page-section h3 {
     color: #0B346A;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+  
+.section-title {
+    color: #0B346A;
+    border-left: 3px solid #77B0AA;
+    margin-bottom: 2rem;
+    padding-left: 0.5rem;
+    font-size: 1.6rem;
 }
 
-/* Activities Page */
+.opening-paragraph {
+    font-weight: 700;
+    font-style: italic;
+    color: #0B346A;
+}
+
+/* ABOUT PAGE */
+.accordian-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #0000002a;
+    padding: 1rem 1rem;
+  }
+  
+  .accordian-header h3 {
+    color: #0B346A;
+  }
+  
+  .accordian-text {
+    padding: 1rem 1rem 1.2rem 1rem;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, opacity 0.5s ease;
+  }
+  
+  .accordian-text.visible{
+    max-height: 500px; /* Adjust based on expected content height */
+    opacity: 1;
+  }
+
+
+/* ACTIVITIES PAGE */
 .activity-section,
 .activity-details {
     display: flex;
