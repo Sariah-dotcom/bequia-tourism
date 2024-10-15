@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import EmailContact from "../components/EmailContact.jsx";
 import AccommodationCard from "../components/AccommodationCard.jsx";
 import SectionTitle from "../components/SectionTitle.jsx";
 import PageHero from "../components/PageHero.jsx";

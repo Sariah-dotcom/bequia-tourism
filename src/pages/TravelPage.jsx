@@ -1,7 +1,6 @@
 import React from 'react'
 import PageHero from '../components/PageHero.jsx';
 import SectionTitle from '../components/SectionTitle.jsx';
-import EmailContact from '../components/EmailContact.jsx';
 
 export default function TravelPage() {
   return (

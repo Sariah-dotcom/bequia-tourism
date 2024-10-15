@@ -1,7 +1,5 @@
 import React from 'react'
 import AccommodationInfoCard from '../components/AccommodationInfoCard'
-import PageHero from '../components/PageHero'
-import EmailContact from '../components/EmailContact'
 
 export default function AccommodationsInfo() {
   return (

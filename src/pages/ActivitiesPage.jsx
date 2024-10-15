@@ -20,7 +20,7 @@ export default function ActivitiesPage() {
           <div className="section-btns">
             <HashLink to='#restaurants'>
               <button>Restaurants & Dining</button>
-            </HashLink>
+            </HashLink>           
             <button>Festivals & Events</button>
             <button>Diving & Watersports</button>
             <button>Places of Interest</button>

@@ -1,7 +1,6 @@
 import React from 'react'
 import SectionTitle from '../components/SectionTitle';
 import Accordian from '../components/Accordian.jsx';
-import EmailContact from '../components/EmailContact.jsx';
 import PageHero from '../components/PageHero.jsx';
 
 export default function About() {
@@ -65,7 +64,6 @@ export default function About() {
             />
         </div>
       </div>
-      {/* <EmailContact /> */}
 
 
      
