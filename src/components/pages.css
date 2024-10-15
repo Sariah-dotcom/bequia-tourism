@@ -5,14 +5,17 @@
 }
 
 /* Activities Page */
-.activities, .activity-details {
+.activity-section,
+.activity-details {
     display: flex;
     flex-direction: column;
-    gap: 5rem;
+    gap: 1rem;
 }
 
-.activity-details {
-    gap: 2rem;
+
+
+.activity-section {
+    gap: 4rem;
 }
 
 .activities img {
