@@ -365,6 +365,10 @@ ul li a:hover {
   margin-bottom: 1rem;
 }
 
+.travel-link {
+  text-decoration: none;
+}
+
 
 
 @media only screen and (min-width: 700px) {
@@ -380,6 +384,7 @@ ul li a:hover {
 
   .section-title {
     font-size: 2rem;
+    text-align: left;
   }
   
   #hamburger-menu {
@@ -407,6 +412,24 @@ ul li a:hover {
 
   #page-hero {
     height: 85vh;
+  }
+
+  .page-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+ .welcome-content {
+    width: 70%;
+  }
+
+  #activities-sec {
+    width: 40%;
+  }
+
+  .parent{
+    height: 20%;
   }
 
   .accordian-container {

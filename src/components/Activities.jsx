@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 
 export default function Activities() {
   return (
-    <div className='page-section'>
+    <div className='page-section' id='activities-sec'>
 
       <SectionTitle title='Activities' />
       
