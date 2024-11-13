@@ -352,7 +352,9 @@ ul li a:hover {
   }
 
 }
-
+button:hover{
+  cursor: pointer;
+}
 .contact {
   font-style: italic;
   color: #062349;
@@ -414,14 +416,15 @@ ul li a:hover {
     height: 85vh;
   }
 
-  .page-section {
+  .home-sections {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    gap: 5rem;
   }
 
- .welcome-content {
-    width: 70%;
+  #welcome {
+    width: 65%;
   }
 
   #activities-sec {
@@ -441,11 +444,21 @@ ul li a:hover {
 
   .travel-grid {
     grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
   }
 
-  #page-section {
-    padding: 0rem 10rem;
-    margin-bottom: 15rem;
+  #all-activities {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .activity-details img {
+    width: 50%;
+  }
+
+  .activity-details {
+    width: 70%;
   }
 
 }
